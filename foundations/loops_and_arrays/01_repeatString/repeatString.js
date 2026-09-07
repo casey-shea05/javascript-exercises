@@ -1,15 +1,13 @@
 const repeatString = function (word, repeats) {
-  if (repeats < 0) {
-    return "ERROR";
-  }
+  if (repeats < 0) return "ERROR";
 
-  const repeatedString = [];
+  repeatedString = "";
 
   for (let i = 0; i < repeats; i++) {
-    repeatedString[i] = word;
+    repeatedString += word;
   }
 
-  return repeatedString.join("");
+  return repeatedString;
 };
 
 // Do not edit below this line
