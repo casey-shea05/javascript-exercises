@@ -7,19 +7,15 @@ const sumAll = function (a, b) {
     return "ERROR";
   }
 
-  if (Number.isNaN(a) || Number.isNaN(b)) {
-    return "ERROR";
-  }
-
-  const list = [];
+  let sum = 0;
   const start = Math.min(a, b);
   const end = Math.max(a, b);
 
   for (let i = start; i <= end; i++) {
-    list.push(i);
+    sum += i;
   }
 
-  return list.reduce((x, y) => x + y);
+  return sum;
 };
 
 // Do not edit below this line
